@@ -20,8 +20,40 @@
 	</header>
 
 	<main>
-		<section class="search-form"> 
-			<form></form>
+		<section class="hotel-search-form"> 
+			<form class="hotel-form" action="https://echo.htmlacademy.ru" method="post">
+				 <fieldset>
+                    <label class="fieldset-title">Инфраструктура:</label>
+                    <input type="checkbox" id="pool" name="pool" checked>
+                    <label for="pool">Бассейн</label>
+                    <input type="checkbox" id="parking" name="parking">
+                    <label for="parking">Парковка</label>
+                    <input type="checkbox" id="wifi" name="wifi">
+                    <label for="wifi">WI-FI</label>
+                 </fieldset>
+                 <fieldset>
+                    <label class="fieldset-title">Тип жилья:</label>
+                    <input type="checkbox" id="hotel" name="hotel" checked>
+                    <label for="hotel">Гостиница</label>
+                    <input type="checkbox" id="motel" name="motel">
+                    <label for="motel">Мотель</label>
+                    <input type="checkbox" id="apartments" name="apartments">
+                    <label for="apartments">Апартаменты</label>
+                 </fieldset>
+                 <div class="range">
+                 	<label for="price">Стоимость в сутки (Р):</label>
+                 	<div class="price-borders">
+                 		<div class="price-borders-min">
+                 			<span>От </span><span>0</span>
+                 		</div>
+                 		<div class="price-borders-max">
+                 			<span>До </span><span>3000</span>
+                 		</div>
+                 	</div>
+                 	<input type="range" id="price" name="price" min="0" max="4000" value="3000">
+                 </div>
+                 <button type="submit" class="button">Показать</button>
+			</form>
 		</section>
 		<section class="search-options">
 			<div class="search-result">
