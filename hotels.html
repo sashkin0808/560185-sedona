@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-	<header>
+	<header class="page-header">
 		<nav class="main-navigation">
 			<a href="index.html" class="main-header-logo">
           		<img src="img/logo.png" width="138" height="70" alt="Логотип">
@@ -19,26 +21,26 @@
 		</nav>	
 	</header>
 
-	<main>
+	<main class="inner-page-container">
 		<section class="hotel-search-form"> 
 			<form class="hotel-form" action="https://echo.htmlacademy.ru" method="post">
 				 <fieldset>
                     <label class="fieldset-title">Инфраструктура:</label>
-                    <input type="checkbox" id="pool" name="pool" checked>
-                    <label for="pool">Бассейн</label>
+                    <input type="checkbox" id="pool" name="pool" tabindex="-1" checked>
+                    <label for="pool" tabindex="0">Бассейн</label>
                     <input type="checkbox" id="parking" name="parking">
-                    <label for="parking">Парковка</label>
+                    <label for="parking" tabindex="0">Парковка</label>
                     <input type="checkbox" id="wifi" name="wifi">
-                    <label for="wifi">WI-FI</label>
+                    <label for="wifi" tabindex="0">WI-FI</label>
                  </fieldset>
                  <fieldset>
                     <label class="fieldset-title">Тип жилья:</label>
                     <input type="checkbox" id="hotel" name="hotel" checked>
-                    <label for="hotel">Гостиница</label>
+                    <label for="hotel" tabindex="0">Гостиница</label>
                     <input type="checkbox" id="motel" name="motel">
-                    <label for="motel">Мотель</label>
+                    <label for="motel" tabindex="0">Мотель</label>
                     <input type="checkbox" id="apartments" name="apartments">
-                    <label for="apartments">Апартаменты</label>
+                    <label for="apartments" tabindex="0">Апартаменты</label>
                  </fieldset>
                  <div class="range">
                  	<label for="price">Стоимость в сутки (Р):</label>
@@ -62,7 +64,7 @@
 			<span>Сортировка:</span>
 			<ul class="options-list"> 
 				<li> 
-					<a href="#">По цене</a>
+					<a class="current" href="#">По цене</a>
 				</li>
 				<li> 
 					<a href="#">По типу</a>
@@ -152,7 +154,7 @@
 		</section>
 	</main>
 
-	<footer>
+	<footer class="page-footer">
 		<div class="footer-tag">
 			<a href="#">#VISITSEDONA</a>
 		</div>
