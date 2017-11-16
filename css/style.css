@@ -1,15 +1,17 @@
 @font-face {
-font-family: "PT Sans Narrow";
+font-family: "PT Sans";
 src: url("../fonts/ptsans.woff2") format("woff2"),
      url("../fonts/ptsans.woff") format("woff");
 font-weight: normal;
+font-style: normal;
 }
 
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff2") format("woff2"),
        url("../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
+  font-style: normal;
 }
 
 body {
@@ -31,8 +33,7 @@ a {
 }
 
 .page-header,
-.container,
-.page-footer {
+.container {
   background-color: #ffffff;
 }
 
@@ -43,6 +44,8 @@ a {
 }
 
 .site-navigation {
+  padding: 0;
+
   list-style: none;
 }
 
@@ -69,7 +72,7 @@ a.active:active {
 .welcome-text {
   background-color: #788596;
   background-image: 
-    url("../img/ShapeBackground.png"),
+    url("../img/shapebackground.png"),
     url("../img/center.jpg");
   background-position: 0 bottom, 0 0;
   background-repeat: no-repeat;
@@ -88,6 +91,8 @@ a.active:active {
 
 .features ul,
 .feature-detail ul {
+  padding: 0;
+
   list-style: none;
 }
 
@@ -192,7 +197,7 @@ a.search-button:active {
   background-color: #5496bd;
 }
 
-.inner-page-container {
+.inner-page.container {
   background-color: #fefefe;
 }
 
@@ -253,6 +258,7 @@ a.search-button:active {
 
 .options-list,
 .options-sort {
+  padding: 0;
   list-style: none;
 }
 
@@ -280,6 +286,8 @@ a.search-button:active {
 }
 
 .hotel-list {
+  padding: 0;
+  
   list-style: none;
 }
 
@@ -338,6 +346,14 @@ a.detail-button:active {
   background-color: #5496bd;
 }
 
+.page-footer {
+  background-color: #fefefe;
+}
+
+.main.page-footer {
+  background-color: rgba(254,254,254,0.9);
+}
+
 .footer-tag a {
   font-size: 21px;
   line-height: 26px;
@@ -347,6 +363,8 @@ a.detail-button:active {
 }
 
 .footer-social ul {
+  padding: 0;
+
   list-style: none;
 }
 
@@ -367,4 +385,3 @@ a.detail-button:active {
   line-height: 26px;
   color: #000000;
 }
-
