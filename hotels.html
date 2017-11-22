@@ -6,7 +6,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body> <div class="main-wrapper">
 	<header class="page-header">
 		<nav class="main-navigation">
 			<a href="index.html" class="main-header-logo">
@@ -25,6 +25,7 @@
 		<section class="hotel-search-form"> 
 			<form class="hotel-form" action="https://echo.htmlacademy.ru" method="post">
 				 <fieldset>
+				  <div class="infrastructure">
                     <label class="fieldset-title">Инфраструктура:</label>
                     <input type="checkbox" id="pool" name="pool" tabindex="-1" checked>
                     <label for="pool" tabindex="0">Бассейн</label>
@@ -32,8 +33,10 @@
                     <label for="parking" tabindex="0">Парковка</label>
                     <input type="checkbox" id="wifi" name="wifi">
                     <label for="wifi" tabindex="0">WI-FI</label>
+                  </div>
                  </fieldset>
                  <fieldset>
+                 <div class="type">
                     <label class="fieldset-title">Тип жилья:</label>
                     <input type="checkbox" id="hotel" name="hotel" checked>
                     <label for="hotel" tabindex="0">Гостиница</label>
@@ -41,20 +44,23 @@
                     <label for="motel" tabindex="0">Мотель</label>
                     <input type="checkbox" id="apartments" name="apartments">
                     <label for="apartments" tabindex="0">Апартаменты</label>
-                 </fieldset>
-                 <div class="range">
-                 	<label for="price">Стоимость в сутки (Р):</label>
-                 	<div class="price-borders">
-                 		<div class="price-borders-min">
-                 			<span>От </span><span>0</span>
-                 		</div>
-                 		<div class="price-borders-max">
-                 			<span>До </span><span>3000</span>
-                 		</div>
-                 	</div>
-                 	<input type="range" id="price" name="price" min="0" max="4000" value="3000">
-                 </div>
-                 <button type="submit" class="button">Показать</button>
+                  </div>
+                </fieldset>
+                <div class="range-with-button">
+	                <div class="range">
+	                 	<label for="price">Стоимость в сутки (Р):</label>
+	                 	<div class="price-borders">
+	                 		<div class="price-borders-min">
+	                 			<span>От </span><span>0</span>
+	                 		</div>
+	                 		<div class="price-borders-max">
+	                 			<span>До </span><span>3000</span>
+	                 		</div>
+	                 	</div>
+	                 	<input type="range" id="price" name="price" min="0" max="4000" value="3000">
+	                 </div>
+	                 <button type="submit" class="button">Показать</button>
+	            </div>
 			</form>
 		</section>
 		<section class="search-options">
@@ -171,6 +177,6 @@
 	        </a>
       	</div>
 	</footer>
-
+  </div>
   </body>
 </html>

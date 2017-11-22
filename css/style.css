@@ -44,6 +44,7 @@ a {
 }
 
 .site-navigation {
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -91,6 +92,7 @@ a.active:active {
 
 .features ul,
 .feature-detail ul {
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -346,11 +348,9 @@ a.detail-button:active {
   background-color: #5496bd;
 }
 
-.page-footer {
-  background-color: #fefefe;
-}
 
-.main.page-footer {
+
+.page-footer {
   background-color: rgba(254,254,254,0.9);
 }
 
@@ -385,3 +385,261 @@ a.detail-button:active {
   line-height: 26px;
   color: #000000;
 }
+
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  width: 100%;
+}
+
+.main-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  position: relative;
+  padding: 0 72px;
+}
+.main-header-logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -69px;
+}
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation li {
+  width: 240px;
+  padding: 15px 0;
+
+  outline: 2px solid red;
+}
+
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+}
+
+.inner-page.container,
+.container {
+  width: 100%;
+}
+
+.welcome-text {
+  width: 100%;
+  margin-bottom: 60px;
+  padding-top: 77px;
+  padding-bottom: 81px;
+  text-align: center;
+}
+
+.features-title {
+  width: 576px;
+  margin: 0 auto 55px auto;
+  text-align: center;
+}
+
+.features-title h2 {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.feature {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.feature li {
+    margin: 0;
+    padding: 0;
+    outline: 2px solid red;
+}
+
+.feature-with-img, .feature-detail {
+  width: 100%;
+}
+
+.feature-with-img {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.feature-text {
+  width: 400px;
+  text-align: center;
+}
+
+.feature-text h2 {
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 25px;
+}
+
+.feature-text p {
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 60px;
+}
+
+.feature-img {
+  width: 800px;
+  height: 256px;
+}
+
+.feature-detail {
+  text-align: center;
+}
+
+.feature-about {
+  display: flex;
+}
+
+.feature-about h3 {
+  margin-top: 160px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.feature-about li {
+  padding-bottom: 85px;
+}
+
+.gray-background {
+  box-sizing: border-box;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.gray-background h2 {
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 25px;
+}
+
+.gray-background p {
+  width: 270px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 60px;
+}
+
+.hotel-search {
+  width: 100%;
+  padding-top: 55px;
+  text-align: center;
+}
+
+.hotel-search h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  padding:0;
+  
+}
+
+.hotel-search p {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.search-button {
+  display: block;
+  width: 568px;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.map-container {
+  height: 473px;
+}
+
+.page-footer {
+  position: relative;
+  width: 100%;
+  background-color: rgba(254,254,254,0.9);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 73px;
+  text-align: center;
+}
+
+.footer-tag {
+  width: 240px;
+  padding-top: 50px;
+
+  outline: 2px solid red;
+}
+
+.footer-social {
+  width: 400px;
+
+  outline: 2px solid red;
+}
+
+.footer-copyright {
+  width: 240px;
+
+  outline: 2px solid red;
+}
+
+.hotel-search-form {
+  width: 100%;
+
+}
+
+.hotel-form {
+  display: flex;
+}
+
+.hotel-form fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.infrastructure {
+  width: 313px;
+  padding-left: 73px;
+  text-align: left;
+
+  outline: 2px solid red;
+}
+
+.type {
+  width: 373px;
+  padding-left: 15px;
+  text-align: left;
+
+
+  outline: 2px solid red;
+}
+
+.range-with-button {
+  width: 427px;
+  padding-right: 73px;
+
+  
+  outline: 2px solid red;
+}
+
+
