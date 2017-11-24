@@ -73,7 +73,7 @@ a.active:active {
 .welcome-text {
   background-color: #788596;
   background-image: 
-    url("../img/shapebackground.png"),
+    url("../img/shape-background.png"),
     url("../img/center.jpg");
   background-position: 0 bottom, 0 0;
   background-repeat: no-repeat;
@@ -288,6 +288,7 @@ a.search-button:active {
 }
 
 .hotel-list {
+  margin: 0;
   padding: 0;
   
   list-style: none;
@@ -598,6 +599,7 @@ body {
   position: relative;
   width: 100%;
   background-color: rgba(254,254,254,0.9);
+  padding: 47px 0;
 }
 
 .wrapper {
@@ -611,8 +613,6 @@ body {
 
 .footer-tag {
   width: 240px;
-  padding-top: 47px;
-  padding-bottom: 47px;
 
   outline: 2px solid red;
 }
