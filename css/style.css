@@ -536,7 +536,6 @@ a.search-button:active {
   background-color: black;
 }
 
-
 .control-min:active::before,
 .control-plus:active::before,
 .control-plus:active::after {
@@ -591,20 +590,20 @@ a.search-button:active {
   display: flex;
   flex-direction: column;
   width: 240px;
-  margin-top: 30px;
+  margin-top: 27px;
   text-align: left;
 }
 
 .infrastructure label,
 .type label {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .type {
   display: flex;
   flex-direction: column;
   width: 225px;
-  margin-top: 30px;
+  margin-top: 27px;
   padding-left: 15px;
   text-align: left;
 }
@@ -612,13 +611,13 @@ a.search-button:active {
 .checkbox-conrol {
   position: relative;
   display: block;
-  padding-left: 39px;
+  padding-left: 40px;
 }
 
 .checkbox-conrol::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   width: 23px;
   height: 23px;
@@ -651,7 +650,7 @@ input.visually-hidden:checked:disabled + .checkbox-conrol::before {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 27px;
   margin-left: auto;
 }
 
@@ -663,17 +662,19 @@ input.visually-hidden:checked:disabled + .checkbox-conrol::before {
 }
 
 .range-with-button .button {
-  width: 133px;
+  width: 135px;
   margin-bottom: 33px;
-  padding: 10px 0;
+  margin-left: -10px;
+  padding: 5px 0;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .price-borders {
   position: relative;
-  width: 318px;
-  height: 36px;
+  width: 315px;
+  height: 34px;
   margin-bottom: 20px;
 
   font-size: 0;
@@ -698,7 +699,7 @@ input.visually-hidden:checked:disabled + .checkbox-conrol::before {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 35px;
   vertical-align: top;
 
   cursor: pointer;
@@ -713,6 +714,7 @@ input.visually-hidden:checked:disabled + .checkbox-conrol::before {
 .price-borders input {
   width: 50px;
   margin: 0;
+  padding: 0;
 
   color: inherit;
   font: inherit;
@@ -771,6 +773,7 @@ input.visually-hidden:checked:disabled + .checkbox-conrol::before {
 
   background-color: transparent;
   border: 2px solid #ffffff;
+  border-radius: 2px;
 }
 
 .hotel-form button[type="submit"]:hover,
@@ -782,7 +785,7 @@ input.visually-hidden:checked:disabled + .checkbox-conrol::before {
 
 .search-options {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
   width: 1056px;
   padding: 30px 72px;
   margin-bottom: 1px;
@@ -813,20 +816,18 @@ input.visually-hidden:checked:disabled + .checkbox-conrol::before {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 40px;
+  margin-left: 38px;
 }
 
 .options-list li {
-  margin-right: 30px;
+  margin-right: 33px;
 }
 
 .options-list a {
   font-size: 12px;
   line-height: 18px;
   color: rgba(0,0,0,0.3);
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .options-list a:hover,
@@ -837,11 +838,11 @@ input.visually-hidden:checked:disabled + .checkbox-conrol::before {
 
 .options-list a:active {
   color: #000000;
-  text-decoration: none;
+  border-bottom: none;
 }
 .options-list .current {
   color: #81b3d2;
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .options-sort {
@@ -913,7 +914,7 @@ input.visually-hidden:checked:disabled + .checkbox-conrol::before {
   margin-bottom: 1px;
 
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 23px;
  }
 
 .hotel::after {
@@ -941,8 +942,8 @@ input.visually-hidden:checked:disabled + .checkbox-conrol::before {
 
 .hotel-text h1 {
   margin: 0;
+  margin-top: -6px;
   padding: 0;
-  margin-top: -3px;
   margin-bottom: 7px;
 }
 
@@ -976,6 +977,7 @@ a.hotel-name:active {
 .hotel-link {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   margin-bottom: 6px;
@@ -985,7 +987,7 @@ a.hotel-name:active {
 
 .hotel-link span {
   align-self: flex-start;
-  margin-bottom: 7px; 
+  margin-bottom: 13px; 
   text-align: left;
 }
 
@@ -993,9 +995,9 @@ a.hotel-name:active {
   position: relative;
   align-self: flex-end;
   margin-left: auto;
-  padding-top: 68px;
-  padding-bottom: 9px;
-  padding-right: 15px;
+  padding-top: 69px;
+  padding-bottom: 7px;
+  padding-right: 13px;
 
   color: #666666;
 }
@@ -1029,12 +1031,21 @@ a.order-button {
   background-color: #766357;
 }
 
+
+
 .detail-button,
 .order-button {
   display: block;
-  width: 142px;
-  padding: 5px 0;
+  padding: 4px 0;
   margin-right: 6px;
+}
+
+.detail-button {
+  width: 110px;
+}
+
+.order-button  {
+  width: 142px;
 }
 
 a.order-button:hover,
@@ -1071,21 +1082,21 @@ a.detail-button:active {
 .page-footer {
   position: relative;
   width: 100%;
-  padding: 47px 0;
+  padding: 36px 0;
   background-color: rgba(254,254,254,0.9);
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0 72px;
-  text-align: center;
 }
 
 .footer-tag {
-  width: 240px;
+  width: 180px;
+  padding-left: 60px;
 }
 
 .footer-tag a {
@@ -1115,6 +1126,7 @@ a.detail-button:active {
   justify-content: center;
   width: 46px;
   height: 48px;
+  margin-right: 6px;
 
   background-color: #81b3d2;
 }
@@ -1134,11 +1146,12 @@ a.detail-button:active {
 }
 
 .footer-copyright {
-  width: 240px;
+  width: 211px;
+  padding-right: 23px;
 }
 
 .footer-copyright span {
-  margin-right: 6px;
+  margin-right: 7px;
   line-height: 26px;
   color: #000000;
 }
