@@ -37,6 +37,11 @@ a {
   text-decoration: none;
 }
 
+img {
+max-width: 100%;
+height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden {
   position: absolute;
@@ -208,7 +213,8 @@ a.active:active {
   padding: 0;
 }
 
-.feature-with-img, .feature-detail {
+.feature-with-img, 
+.feature-detail {
   width: 100%;
 }
 
@@ -220,11 +226,6 @@ a.active:active {
 
   background-color: #81b3d2;
 }
-
-.feature-with-img img {
-  width: 100%;
-  height: auto;
-}  
 
 .feature h2, 
 .feature-about h3 {
@@ -256,7 +257,6 @@ a.active:active {
 }
 
 .feature-text p {
-  /*width: 310px;*/
   margin: 0 auto;
   padding-top: 23px;
   padding-bottom: 58px;
@@ -409,9 +409,17 @@ a.search-button:active {
   background-color: #503e33;
 }
 
+.map {
+	height: 473px;
+	width: 100%;
+}
+
 .map-container {
-  height: 473px;
+  height: 593px;
   width: 100%;
+  background-color: #e0e8cd;
+  background-image: url("../img/map.png"); 
+  background-repeat: no-repeat;
 }
 
 .search-form {
@@ -431,7 +439,6 @@ a.search-button:active {
   align-items: center;
   width: 100%;
   margin-bottom: 30px;
-  margin-right: 9px;
 }
 
 .search-form .half-width {
@@ -441,27 +448,31 @@ a.search-button:active {
   box-sizing: border-box;
   width: 50%;
   margin-bottom: 53px;
-  padding-right: 17px;
+  padding-right: 2px;
 }
 
 .half-width.right {
   box-sizing: border-box;
-  padding-right: 13px;
   padding-left: 50px;
+  padding-right: 0;
 }
 
 .all-width input {
-  width: 270px;
+  width: 322px;
   padding: 4px 10px;
   background-color: #f2f2f2;
 }
 
 .half-width input {
-  width: 35px;
-  padding: 4px 10px;
+	box-sizing: border-box;
+  width: 38px;
+  padding: 4px 5px;
   text-align: center;
   background-color: #f2f2f2;
+}
 
+.input-wrapper {
+	position: relative;
 }
 
 .search-form input[type="text"],
@@ -492,7 +503,6 @@ a.search-button:active {
 }
 
 .search-form button {
-  background-color: #f2f2f2;
   border: none;
 }
 
@@ -501,10 +511,15 @@ a.search-button:active {
 }
 
 .calendar {
+	position: absolute;
+	top: 50%;
+	right: 9px;
+	margin-top: -11px;
+
   padding: 0;
   vertical-align: middle;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: transparent;
 
 }
 
@@ -531,21 +546,27 @@ a.search-button:active {
   border: none;
 }
 
+.controls {
+	display: flex;
+	background-color: #f2f2f2;
+}
+
 .control-plus,
 .control-min {
   position: relative;
-  width: 11px;
-  height: 11px;
+  width: 38px;
+  height: 38px;
   padding: 0; 
   vertical-align: middle;
+  background-color: #f2f2f2;
 }
 
 .control-plus::before,
 .control-min::before {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 0;
+  top: 18px;
+  left: 13px;
   width: 11px;
   height: 3px;
   background-color: #a9a9a9;
@@ -554,8 +575,8 @@ a.search-button:active {
 .control-plus::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 4px;
+  top: 14px;
+  left: 17px;
   width: 3px;
   height: 11px;
   background-color: #a9a9a9;
@@ -755,7 +776,6 @@ input.visually-hidden:checked:disabled + .checkbox-conrol::before {
   padding: 0;
 
   color: inherit;
-  font: inherit;
 
   background: none;
   border: none;
@@ -1034,11 +1054,21 @@ a.hotel-name:active {
   align-self: flex-start;
   min-width: 105px;
   margin-left: auto;
-  padding-top: 66px;
-  padding-right: 13px;
+  padding-top: 63px;
   text-align: right;
 
   color: #666666;
+}
+
+.hotel-rating span {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 13px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+  
 }
 
 .rating-img {
@@ -1050,17 +1080,17 @@ a.hotel-name:active {
 }
 
 .four-stars {
-  width: 87px;
+  width: 88px;
   height: 17px;
 }
 
 .three-stars {
-  width: 64px;
+  width: 65px;
   height: 17px;
 }
 
 .rating-img.two-stars {
-  width: 39px;
+  width: 40px;
   height: 17px;
 }
 
@@ -1070,8 +1100,6 @@ a.order-button {
 
   background-color: #766357;
 }
-
-
 
 .detail-button,
 .order-button {
@@ -1117,7 +1145,6 @@ a.detail-button:active {
   color: rgba(255,255,255,0.3);
   background-color: #5496bd;
 }
-
 
 .page-footer {
   position: relative;
@@ -1186,7 +1213,7 @@ a.detail-button:active {
 }
 
 .footer-copyright {
-  width: 211px;
+  width: 210px;
   padding-right: 23px;
 }
 
